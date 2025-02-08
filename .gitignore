@@ -1,0 +1,57 @@
+# Entornos virtuales
+.venv/
+venv/
+
+# Archivos de código de bytes
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de IDEs
+.idea/
+*.swp
+*.swo
+*.ipr
+*.iws
+*.iml
+.vscode/
+
+# Archivos de distribución
+dist/
+build/
+*.egg-info
+
+# Archivos de registro y temporales
+*.log
+*.bak
+*.tmp
+*.out
+
+# Archivos de configuración local (ejemplo)
+config.ini
+secrets.json
+
+# Archivos de datos grandes (si no se gestionan con DVC u otra herramienta)
+data/*.csv
+data/*.xlsx
+*.csv
+*.xlsx
+
+# Archivos específicos que quieras ignorar
+/nombre_de_archivo_que_quieres_ignorar.txt
+/carpeta_que_quieres_ignorar/
+
+# Archivos de test
+/test_results/
+
+# Archivos de bases de datos locales (ejemplos)
+*.sqlite
+*.db
+
+# Ignorar archivos locales sensibles
+.env

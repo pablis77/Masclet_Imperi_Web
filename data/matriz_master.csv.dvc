@@ -1,0 +1,5 @@
+outs:
+- md5: a3485afb7b72c2c8840044e38849ca28
+  size: 4034
+  hash: md5
+  path: matriz_master.csv

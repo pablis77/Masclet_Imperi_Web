@@ -1,0 +1,6 @@
+/config.local
+/tmp
+/cache
+/data/matriz_master.csv
+# Ignorar archivos locales sensibles
+.env
