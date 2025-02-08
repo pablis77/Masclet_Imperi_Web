@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masclet Imperi</title>
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        <h1>Masclet Imperi</h1>
+    </header>
+    <nav>
+        {% if current_user.is_authenticated %}
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('auth.logout') }}">Cerrar Sesión</a>
+        {% else %}
+        <a href="{{ url_for('auth.login') }}">Iniciar Sesión</a>
+        {% endif %}
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <span>{{ current_user.username }} ({{ current_user.role }})</span>
+        <span id="date-time">{{ date_time }}</span>
+    </footer>
+</body>
+</html>
