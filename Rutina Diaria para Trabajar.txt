@@ -1,0 +1,69 @@
+2. Rutina Diaria para Trabajar con GitHub y DVC
+Al Iniciar el Día
+Activa el Entorno Virtual:
+bash
+Copiar
+1
+.\venv_web\Scripts\activate
+Navega al Directorio del Proyecto:
+bash
+Copiar
+1
+cd C:\Proyectos\Masclet_Imperi_Web
+Actualiza el Código desde GitHub:
+Sincroniza los cambios más recientes del repositorio remoto:
+bash
+Copiar
+1
+git pull origin master
+Descarga los Datos con DVC:
+Si has modificado datos grandes, descárgalos desde el almacenamiento remoto:
+bash
+Copiar
+1
+dvc pull
+Verifica las Dependencias:
+Instala cualquier dependencia nueva si es necesario:
+bash
+Copiar
+1
+pip install -r requirements.txt
+Inicia el Servidor Flask (Si Aplica):
+Ejecuta el servidor local para probar cambios:
+bash
+Copiar
+1
+python app.py
+Al Finalizar el Día
+Guarda Cambios Locales:
+Asegúrate de que todos los cambios estén guardados en Visual Studio Code.
+Agrega Cambios a Git:
+Agrega los archivos modificados:
+bash
+Copiar
+1
+git add .
+Confirma los Cambios:
+Crea un commit con un mensaje descriptivo:
+bash
+Copiar
+1
+git commit -m "Descripción del cambio realizado"
+Sube los Cambios a GitHub:
+Envía los cambios al repositorio remoto:
+bash
+Copiar
+1
+git push origin master
+Sube los Datos con DVC:
+Si has modificado datos grandes, guárdalos en el almacenamiento remoto:
+bash
+Copiar
+1
+dvc push
+Crea una Copia de Seguridad Local (Opcional):
+Si deseas, puedes hacer una copia local del proyecto:
+bash
+Copiar
+1
+xcopy /E /I C:\Proyectos\Masclet_Imperi_Web C:\Backups\Masclet_Imperi_Web_b
